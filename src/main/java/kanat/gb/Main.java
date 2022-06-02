@@ -33,6 +33,8 @@ public class Main extends JFrame {
                 display.setText(str);
                 System.out.println(str);
                 String ans = scan.toString();
+                displayAns.setText(ans);
+
             }
         };
 
@@ -51,7 +53,7 @@ public class Main extends JFrame {
         sendText.add(reset);
 
         display = new JLabel("Your message");
-        display.setHorizontalAlignment(SwingConstants.RIGHT);
+        display.setHorizontalAlignment(SwingConstants.LEFT);
         display.setFont(new Font("Serif",Font.PLAIN,15));
 
 
@@ -60,6 +62,7 @@ public class Main extends JFrame {
         displayAns.setFont(new Font("Serif",Font.PLAIN,15));
 
         add(display, BorderLayout.NORTH);
+        add(displayAns,BorderLayout.CENTER);
         add(sendText, BorderLayout.SOUTH);
 
 
